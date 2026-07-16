@@ -1,49 +1,58 @@
 import "../../styles/gallery.css";
 
-import img1 from "../../assets/images/hero-farmacia.jpg";
+import galleryImage from "../../assets/images/hero-farmacia.jpg";
 
-export default function Gallery() {
+export default function Gallery(){
 
-  return (
+return(
 
-    <section className="gallery" id="espaco">
+<section className="gallery" id="espaco">
 
-      <div className="gallery-container">
-
-
-        <div className="section-header">
-
-          <span>
-            NOSSO ESPAÇO
-          </span>
-
-          <h2>
-            Um ambiente preparado para cuidar de você.
-          </h2>
-
-          <p>
-            Uma estrutura pensada para oferecer conforto,
-            segurança e um atendimento próximo para toda família.
-          </p>
-
-        </div>
+<div className="gallery-container">
 
 
-        <div className="gallery-image">
+<div className="gallery-image">
 
-          <img 
-            src={img1}
-            alt="Farmácia Nogueira Tanguá"
-          />
+<img 
+src={galleryImage}
+alt="Espaço Farmácia Nogueira Tanguá"
+/>
 
-        </div>
-
-
-      </div>
+</div>
 
 
-    </section>
+<div className="gallery-text">
 
-  );
+<span className="section-tag">
+NOSSO ESPAÇO
+</span>
+
+
+<h2>
+Um ambiente preparado para cuidar de você.
+</h2>
+
+
+<p>
+Nossa estrutura foi pensada para oferecer conforto,
+organização e um atendimento tranquilo para toda
+a família.
+</p>
+
+
+<p>
+Um espaço moderno, acolhedor e preparado para
+atender suas necessidades de saúde e bem-estar.
+</p>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+)
 
 }
