@@ -101,3 +101,141 @@ font-size:14px;
 
 
 }
+
+/* =====================
+   ABOUT
+===================== */
+
+
+.about{
+
+padding:100px 0;
+
+}
+
+
+.about-container{
+
+max-width:1200px;
+margin:auto;
+
+padding:0 60px;
+
+display:flex;
+align-items:center;
+gap:60px;
+
+}
+
+
+.about-content{
+
+flex:1;
+
+}
+
+
+.section-tag{
+
+color:#1565FF;
+font-weight:700;
+font-size:14px;
+
+}
+
+
+.about h2{
+
+font-size:42px;
+color:#111827;
+margin:20px 0;
+
+}
+
+
+.about p{
+
+font-size:18px;
+line-height:1.7;
+color:#4B5563;
+
+}
+
+
+
+.about-card{
+
+flex:1;
+
+background:#f8fafc;
+padding:40px;
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+
+
+.about-card h3{
+
+font-size:28px;
+
+}
+
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+
+.about{
+
+padding:70px 0;
+
+}
+
+
+
+.about-container{
+
+padding:0 20px;
+
+display:flex;
+flex-direction:column;
+
+gap:30px;
+
+text-align:center;
+
+}
+
+
+
+.about h2{
+
+font-size:30px;
+
+}
+
+
+
+.about p{
+
+font-size:16px;
+
+}
+
+
+
+.about-card{
+
+width:100%;
+padding:30px 20px;
+
+}
+
+
+}
