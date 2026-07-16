@@ -1,54 +1,49 @@
 import "../../styles/reviews.css";
 
-
 const reviews = [
-
-{
-name:"Cliente da Farmácia",
-text:"Excelente atendimento, sempre sou muito bem atendido pela equipe."
-},
-
-{
-name:"Cliente da Farmácia",
-text:"Farmácia completa, ambiente agradável e profissionais muito atenciosos."
-},
-
-{
-name:"Cliente da Farmácia",
-text:"Confiança e cuidado em todos os atendimentos."
-
-}
-
+  {
+    name:"Maria Silva",
+    text:"Excelente atendimento. A equipe sempre orienta com muita atenção e cuidado.",
+    stars:"★★★★★"
+  },
+  {
+    name:"João Pereira",
+    text:"Farmácia muito organizada, ambiente agradável e profissionais excelentes.",
+    stars:"★★★★★"
+  },
+  {
+    name:"Ana Souza",
+    text:"Sempre encontro o que preciso e sou atendida muito bem.",
+    stars:"★★★★★"
+  }
 ];
 
 
 export default function Reviews(){
 
-
-return (
+return(
 
 <section className="reviews">
-
 
 <div className="reviews-container">
 
 
-<div className="section-header">
+<div className="reviews-header">
 
-<span>
+<span className="section-tag">
 AVALIAÇÕES
 </span>
 
 
 <h2>
-O cuidado que nossos clientes reconhecem.
+O que nossos clientes dizem
 </h2>
 
 
 <p>
-A satisfação de quem escolhe a Farmácia Nogueira Tanguá.
+A confiança dos nossos clientes é o que nos motiva
+a oferecer sempre o melhor atendimento.
 </p>
-
 
 </div>
 
@@ -59,12 +54,14 @@ A satisfação de quem escolhe a Farmácia Nogueira Tanguá.
 
 {reviews.map((review,index)=>(
 
-
-<div className="review-card" key={index}>
+<div 
+className="review-card"
+key={index}
+>
 
 
 <div className="stars">
-★★★★★
+{review.stars}
 </div>
 
 
@@ -80,7 +77,6 @@ A satisfação de quem escolhe a Farmácia Nogueira Tanguá.
 
 </div>
 
-
 ))}
 
 
@@ -89,10 +85,8 @@ A satisfação de quem escolhe a Farmácia Nogueira Tanguá.
 
 </div>
 
-
 </section>
 
 )
-
 
 }
