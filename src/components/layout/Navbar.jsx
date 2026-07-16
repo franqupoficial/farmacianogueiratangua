@@ -1,41 +1,32 @@
 import Logo from "./Logo";
+import "../../styles/navbar.css";
 
 export default function Navbar() {
+  return (
+    <nav className="navbar">
 
-return (
+      <div className="navbar-container">
 
-<nav className="navbar">
+        <Logo />
 
-<div className="navbar-container">
+        <div className="navbar-links">
 
-<Logo />
+          <a href="#sobre">
+            Sobre nós
+          </a>
 
+          <a href="#servicos">
+            Serviços
+          </a>
 
-<div className="navbar-links">
+          <a href="#contato" className="navbar-button">
+            Contato
+          </a>
 
-<a href="#sobre">
-Sobre nós
-</a>
+        </div>
 
-<a href="#servicos">
-Serviços
-</a>
+      </div>
 
-
-<a 
-href="#contato"
-className="navbar-button"
->
-Contato
-</a>
-
-
-</div>
-
-</div>
-
-</nav>
-
-);
-
+    </nav>
+  );
 }
