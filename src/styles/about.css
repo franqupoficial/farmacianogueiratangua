@@ -1,58 +1,72 @@
-.about {
+.about{
+background:#fff;
+}
 
-  padding:100px 20px;
-  background:#ffffff;
+
+.about-container{
+
+max-width:1200px;
+margin:auto;
+
+display:grid;
+grid-template-columns:1fr 400px;
+gap:70px;
+align-items:center;
 
 }
 
 
-.about-container {
+.section-tag{
 
-  max-width:1000px;
-  margin:auto;
-
-}
-
-
-.about-content {
-
-  text-align:center;
+font-size:14px;
+font-weight:700;
+color:#1565FF;
+letter-spacing:1px;
 
 }
 
 
-.about-tag {
+.about h2{
 
-  color:#1565ff;
-  font-size:14px;
-  font-weight:700;
-  letter-spacing:1px;
+font-size:42px;
+margin:20px 0;
 
 }
 
 
-.about h2 {
+.about p{
 
-  margin:20px auto;
-
-  font-size:42px;
-  line-height:1.2;
-  color:#111827;
-
-  max-width:700px;
+font-size:18px;
+line-height:1.7;
+color:#4b5563;
+margin-bottom:18px;
 
 }
 
 
-.about p {
 
-  max-width:750px;
-  margin:18px auto;
+.about-card{
 
-  font-size:18px;
-  line-height:1.7;
+background:#f8fafc;
+padding:40px;
+border-radius:24px;
 
-  color:#4b5563;
+box-shadow:0 20px 50px rgba(0,0,0,.06);
+
+}
+
+
+.about-card h3{
+
+font-size:26px;
+margin-bottom:15px;
+
+}
+
+
+.about-card p{
+
+font-size:16px;
 
 }
 
@@ -61,24 +75,24 @@
 @media(max-width:768px){
 
 
-.about {
+.about-container{
 
- padding:70px 20px;
-
-}
-
-
-.about h2 {
-
- font-size:30px;
+grid-template-columns:1fr;
+gap:30px;
 
 }
 
 
-.about p {
+.about h2{
 
- font-size:16px;
- line-height:1.6;
+font-size:30px!important;
+
+}
+
+
+.about-card{
+
+padding:25px;
 
 }
 
