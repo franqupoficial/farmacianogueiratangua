@@ -7,7 +7,7 @@ export default function Hero() {
 
       <div className="hero-container">
 
-        <div>
+        <div className="hero-content">
 
           <span className="hero-tag">
             FARMÁCIA NOGUEIRA TANGUÁ
@@ -24,7 +24,12 @@ export default function Hero() {
             cuidar da sua família.
           </p>
 
+          <a className="hero-button" href="#contato">
+            Fale conosco
+          </a>
+
         </div>
+
 
         <div className="hero-image">
           <img
