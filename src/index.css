@@ -77,3 +77,52 @@ section{
     }
 
 }
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px){
+
+  h1{
+    font-size:32px !important;
+    line-height:1.15 !important;
+  }
+
+  h2{
+    font-size:26px !important;
+  }
+
+  h3{
+    font-size:22px !important;
+  }
+
+
+  p{
+    font-size:16px !important;
+    line-height:1.6 !important;
+  }
+
+
+  section{
+    padding-left:20px !important;
+    padding-right:20px !important;
+  }
+
+
+  img{
+    max-width:100%;
+    height:auto;
+  }
+
+
+}
+
+
+/* TABLET */
+
+@media (min-width:769px) and (max-width:1200px){
+
+ h1{
+   font-size:45px;
+ }
+
+}
