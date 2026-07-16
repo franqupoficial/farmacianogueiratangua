@@ -1,6 +1,10 @@
+import "../../styles/contact.css";
+
+
 export default function Contact(){
 
-return(
+
+return (
 
 <section id="contato" className="contact">
 
@@ -8,9 +12,9 @@ return(
 <div className="contact-container">
 
 
-<div className="contact-info">
+<div className="section-header">
 
-<span className="section-tag">
+<span>
 FALE CONOSCO
 </span>
 
@@ -21,20 +25,9 @@ Estamos prontos para cuidar de você.
 
 
 <p>
-Entre em contato com a Farmácia Nogueira Tanguá
-e tenha atendimento rápido e personalizado.
+Entre em contato com a Farmácia Nogueira Tanguá.
+Nossa equipe está à disposição.
 </p>
-
-
-<div className="contact-item">
-📍 Almirante Tamandaré - PR
-</div>
-
-
-<div className="contact-item">
-📞 Atendimento pelo WhatsApp
-</div>
-
 
 </div>
 
@@ -43,26 +36,23 @@ e tenha atendimento rápido e personalizado.
 <div className="contact-box">
 
 
-<h3>
-Precisa de ajuda?
-</h3>
-
-
-<p>
-Clique abaixo e fale agora com nossa equipe.
-</p>
-
-
-<a 
-href="https://wa.me/5500000000000"
-className="whatsapp-button"
-target="_blank"
->
-Chamar no WhatsApp
+<a href="https://wa.me/" target="_blank">
+WhatsApp
 </a>
 
 
+<p>
+Farmácia Nogueira Tanguá
+</p>
+
+
+<p>
+Atendimento próximo e humanizado para sua família.
+</p>
+
+
 </div>
+
 
 
 </div>
@@ -71,5 +61,6 @@ Chamar no WhatsApp
 </section>
 
 )
+
 
 }

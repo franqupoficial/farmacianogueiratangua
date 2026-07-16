@@ -1,75 +1,49 @@
-export default function Gallery(){
+import "../../styles/gallery.css";
 
-const images = [
+import img1 from "../../assets/images/hero-farmacia.jpg";
 
-"/images/interior-farmacia.jpg",
-"/images/interior-farmacia.jpg",
-"/images/interior-farmacia.jpg"
+export default function Gallery() {
 
-];
+  return (
 
+    <section className="gallery" id="espaco">
 
-return(
-
-<section className="gallery">
+      <div className="gallery-container">
 
 
-<div className="gallery-container">
+        <div className="section-header">
+
+          <span>
+            NOSSO ESPAÇO
+          </span>
+
+          <h2>
+            Um ambiente preparado para cuidar de você.
+          </h2>
+
+          <p>
+            Uma estrutura pensada para oferecer conforto,
+            segurança e um atendimento próximo para toda família.
+          </p>
+
+        </div>
 
 
-<div className="gallery-header">
+        <div className="gallery-image">
 
-<span className="section-tag">
-NOSSO ESPAÇO
-</span>
+          <img 
+            src={img1}
+            alt="Farmácia Nogueira Tanguá"
+          />
 
-
-<h2>
-Conheça nossa farmácia.
-</h2>
+        </div>
 
 
-<p>
-Um ambiente preparado para receber você
-com conforto e segurança.
-</p>
+      </div>
 
 
-</div>
+    </section>
 
-
-
-<div className="gallery-grid">
-
-
-{
-images.map((image,index)=>(
-
-<div 
-className="gallery-item"
-key={index}
->
-
-<img 
-src={image}
-alt="Farmácia Nogueira Tanguá"
-/>
-
-</div>
-
-))
-
-}
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-)
+  );
 
 }

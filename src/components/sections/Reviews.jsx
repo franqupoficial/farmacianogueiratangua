@@ -1,26 +1,31 @@
-export default function Reviews(){
+import "../../styles/reviews.css";
+
 
 const reviews = [
 
 {
-name:"Maria Silva",
-text:"Excelente atendimento. Sempre fui muito bem orientada pela equipe."
+name:"Cliente da Farmácia",
+text:"Excelente atendimento, sempre sou muito bem atendido pela equipe."
 },
 
 {
-name:"João Pereira",
-text:"Farmácia completa, atendimento rápido e profissionais muito atenciosos."
+name:"Cliente da Farmácia",
+text:"Farmácia completa, ambiente agradável e profissionais muito atenciosos."
 },
 
 {
-name:"Ana Souza",
-text:"Um lugar de confiança para cuidar da minha família."
+name:"Cliente da Farmácia",
+text:"Confiança e cuidado em todos os atendimentos."
+
 }
 
 ];
 
 
-return(
+export default function Reviews(){
+
+
+return (
 
 <section className="reviews">
 
@@ -28,21 +33,20 @@ return(
 <div className="reviews-container">
 
 
-<div className="reviews-header">
+<div className="section-header">
 
-<span className="section-tag">
+<span>
 AVALIAÇÕES
 </span>
 
 
 <h2>
-Quem conhece recomenda.
+O cuidado que nossos clientes reconhecem.
 </h2>
 
 
 <p>
-A opinião dos nossos clientes é o que nos
-motiva todos os dias.
+A satisfação de quem escolhe a Farmácia Nogueira Tanguá.
 </p>
 
 
@@ -53,13 +57,10 @@ motiva todos os dias.
 <div className="reviews-grid">
 
 
-{
-reviews.map((review,index)=>(
+{reviews.map((review,index)=>(
 
-<div 
-className="review-card"
-key={index}
->
+
+<div className="review-card" key={index}>
 
 
 <div className="stars">
@@ -79,9 +80,8 @@ key={index}
 
 </div>
 
-))
 
-}
+))}
 
 
 </div>
@@ -93,5 +93,6 @@ key={index}
 </section>
 
 )
+
 
 }

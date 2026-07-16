@@ -1,31 +1,24 @@
-export default function Services(){
+import "../../styles/services.css";
+
 
 const services = [
 
-{
-title:"Medicamentos",
-text:"Amplo catálogo de medicamentos com orientação farmacêutica."
-},
+"Medicamentos e perfumaria",
 
-{
-title:"Atendimento Farmacêutico",
-text:"Cuidado personalizado para orientar você e sua família."
-},
+"Atendimento farmacêutico personalizado",
 
-{
-title:"Estética Avançada",
-text:"Tratamentos e soluções para sua beleza e bem-estar."
-},
+"Estética avançada",
 
-{
-title:"Saúde e Bem-estar",
-text:"Produtos selecionados para melhorar sua qualidade de vida."
-}
+"Cuidados para sua família",
+
+"Orientação e acompanhamento"
 
 ];
 
 
-return(
+export default function Services(){
+
+return (
 
 <section id="servicos" className="services">
 
@@ -33,21 +26,22 @@ return(
 <div className="services-container">
 
 
-<div className="services-header">
+<div className="section-header">
 
-<span className="section-tag">
+
+<span>
 NOSSOS SERVIÇOS
 </span>
 
 
 <h2>
-Tudo que você precisa em um só lugar.
+Soluções completas para sua saúde.
 </h2>
 
 
 <p>
-Soluções completas para cuidar da sua saúde
-com segurança e confiança.
+Tudo o que você precisa em um só lugar,
+com atendimento humanizado.
 </p>
 
 
@@ -58,35 +52,23 @@ com segurança e confiança.
 <div className="services-grid">
 
 
-{
-services.map((service,index)=>(
+{services.map((item,index)=>(
 
-<div 
-className="service-card"
-key={index}
->
 
+<div className="service-card" key={index}>
 
 <h3>
-{service.title}
+{item}
 </h3>
 
-
 <p>
-{service.text}
+Cuidado, segurança e qualidade em cada atendimento.
 </p>
-
-
-<a href="#contato">
-Saiba mais
-</a>
-
 
 </div>
 
-))
 
-}
+))}
 
 
 </div>
