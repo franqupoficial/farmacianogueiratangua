@@ -1,6 +1,10 @@
+import "../../styles/footer.css";
+
+
 export default function Footer(){
 
-return(
+
+return (
 
 <footer className="footer">
 
@@ -13,7 +17,6 @@ return(
 <h3>
 Farmácia Nogueira Tanguá
 </h3>
-
 
 <p>
 Cuidado, saúde e confiança para sua família.
@@ -29,16 +32,15 @@ Cuidado, saúde e confiança para sua família.
 Sobre nós
 </a>
 
+
 <a href="#servicos">
 Serviços
 </a>
 
+
 <a href="#contato">
 Contato
 </a>
-
-</div>
-
 
 
 </div>
@@ -47,8 +49,11 @@ Contato
 
 <div className="footer-bottom">
 
-© {new Date().getFullYear()} Farmácia Nogueira Tanguá.
+© 2026 Farmácia Nogueira Tanguá.
 Todos os direitos reservados.
+
+</div>
+
 
 </div>
 
