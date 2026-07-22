@@ -1,105 +1,27 @@
-export default function Stats(){
+const pillars = [
+  ["Atendimento farmacêutico", "Orientação profissional para cuidar da sua saúde com mais segurança."],
+  ["Conhecimento e experiência", "Uma equipe preparada para oferecer um atendimento próximo e qualificado."],
+  ["Compromisso com pessoas", "Relacionamento, confiança e cuidado em todos os momentos."],
+];
 
-  const pillars = [
-    {
-      title:"Atendimento farmacêutico",
-      text:"Orientação profissional para cuidar da sua saúde com mais segurança."
-    },
-    {
-      title:"Conhecimento e experiência",
-      text:"Uma equipe preparada para oferecer um atendimento próximo e qualificado."
-    },
-    {
-      title:"Compromisso com pessoas",
-      text:"Relacionamento, confiança e cuidado em todos os momentos."
-    }
-  ];
-
-
-  return(
-
-    <section
-      style={{
-        padding:"100px 60px",
-        background:"#ffffff"
-      }}
-    >
-
-      <div
-        style={{
-          maxWidth:"1100px",
-          margin:"auto",
-          textAlign:"center"
-        }}
-      >
-
-        <span
-          style={{
-            color:"#1565FF",
-            fontWeight:"700",
-            letterSpacing:"3px",
-            fontSize:"14px"
-          }}
-        >
-          NOSSA ESSÊNCIA
-        </span>
-
-
-        <h2
-          style={{
-            fontSize:"44px",
-            color:"#111827",
-            margin:"25px 0"
-          }}
-        >
-          Cuidado que gera confiança
-        </h2>
-
-
-        <div
-          style={{
-            display:"grid",
-            gridTemplateColumns:"repeat(auto-fit,minmax(280px,1fr))",
-            gap:"50px",
-            marginTop:"60px"
-          }}
-        >
-
-          {pillars.map((item,index)=>(
-
-            <div key={index}>
-
-              <h3
-                style={{
-                  fontSize:"22px",
-                  color:"#111827",
-                  marginBottom:"15px"
-                }}
-              >
-                {item.title}
-              </h3>
-
-
-              <p
-                style={{
-                  color:"#6b7280",
-                  lineHeight:"1.7",
-                  fontSize:"17px"
-                }}
-              >
-                {item.text}
-              </p>
-
-            </div>
-
-          ))}
-
+export default function Stats() {
+  return (
+    <section className="section essence" aria-labelledby="essence-title">
+      <div className="site-container">
+        <div className="section-heading section-heading--center">
+          <span className="eyebrow">NOSSA ESSÊNCIA</span>
+          <h2 id="essence-title">Cuidado que gera confiança</h2>
         </div>
-
+        <div className="essence-grid">
+          {pillars.map(([title, text], index) => (
+            <article className="essence-item" key={title}>
+              <span aria-hidden="true">0{index + 1}</span>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
       </div>
-
     </section>
-
-  )
-
+  );
 }

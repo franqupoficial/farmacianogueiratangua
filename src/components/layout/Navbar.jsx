@@ -1,32 +1,42 @@
+import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
 import Logo from "./Logo";
-import "../../styles/navbar.css";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const updateHeader = () => setIsScrolled(window.scrollY > 16);
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+    return () => window.removeEventListener("scroll", updateHeader);
+  }, []);
+
+  const closeMenu = () => setIsOpen(false);
+
   return (
-    <nav className="navbar">
-
+    <header className={`navbar ${isScrolled ? "navbar--scrolled" : ""}`}>
       <div className="navbar-container">
-
-        <Logo />
-
-        <div className="navbar-links">
-
-          <a href="#sobre">
-            Sobre nós
-          </a>
-
-          <a href="#servicos">
-            Serviços
-          </a>
-
-          <a href="#contato" className="navbar-button">
-            Contato
-          </a>
-
-        </div>
-
+        <a className="navbar-brand" href="#conteudo" aria-label="Ir para o início">
+          <Logo />
+        </a>
+        <button
+          className="navbar-toggle"
+          type="button"
+          aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+          aria-controls="menu-principal"
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen((open) => !open)}
+        >
+          {isOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+        </button>
+        <nav className={`navbar-links ${isOpen ? "navbar-links--open" : ""}`} id="menu-principal" aria-label="Navegação principal">
+          <a href="#sobre" onClick={closeMenu}>Sobre nós</a>
+          <a href="#servicos" onClick={closeMenu}>Serviços</a>
+          <a href="#contato" className="navbar-button" onClick={closeMenu}>Contato</a>
+        </nav>
       </div>
-
-    </nav>
+    </header>
   );
 }
