@@ -1,3 +1,5 @@
+import pharmacyInterior from "../../assets/images/espaco-farmacia.png";
+
 export default function Inside() {
   return (
     <section className="section inside" id="espaco" aria-labelledby="inside-title">
@@ -13,10 +15,10 @@ export default function Inside() {
         </div>
         <figure className="inside-image">
           <img
-            src="https://images.unsplash.com/photo-1586015555751-63bb77f4322a?auto=format&fit=crop&w=1200&q=85"
-            alt="Interior moderno de uma farmácia"
-            width="1200"
-            height="960"
+            src={pharmacyInterior}
+            alt="Interior da Farmácia Nogueira Tanguá"
+            width="941"
+            height="768"
             loading="lazy"
           />
         </figure>

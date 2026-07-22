@@ -1,4 +1,4 @@
-import { HeartPulse, Sparkles } from "lucide-react";
+import { HeartPulse, Users } from "lucide-react";
 
 const owners = [
   {
@@ -8,11 +8,10 @@ const owners = [
     icon: HeartPulse,
   },
   {
-    name: "Dra. Rúbia Nogueira",
-    role: "Farmacêutica | Pós-graduada em Estética Avançada",
-    text: "Especialista em procedimentos estéticos avançados, proporcionando resultados com segurança e cuidado.",
-    detail: "Botox • Preenchimento • Bioestimuladores • Criomodelagem • Tratamentos para varizes",
-    icon: Sparkles,
+    name: "Rúbia Nogueira",
+    role: "Proprietária",
+    text: "Faz parte da história e da gestão da Farmácia Nogueira Tanguá.",
+    icon: Users,
   },
 ];
 

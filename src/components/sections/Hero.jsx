@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="hero-content">
           <span className="eyebrow">FARMÁCIA NOGUEIRA TANGUÁ</span>
           <h1 id="hero-title">Sua saúde merece cuidado de verdade.</h1>
-          <p>Uma farmácia completa em Almirante Tamandaré, com atendimento farmacêutico humanizado, estética avançada e soluções modernas para cuidar da sua família.</p>
+          <p>Uma farmácia completa em Almirante Tamandaré, com atendimento farmacêutico humanizado e soluções modernas para cuidar da sua família.</p>
           <div className="hero-buttons">
             <a href="#contato" className="button button--primary">Fale conosco</a>
             <a href="#servicos" className="button button--secondary">Conheça nossos serviços</a>

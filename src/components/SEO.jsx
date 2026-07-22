@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 
 const siteUrl = "https://farmacianogueiratangua.com.br";
-const description = "Farmácia Nogueira Tanguá em Almirante Tamandaré - PR. Medicamentos, atendimento farmacêutico, estética avançada e cuidado para sua família.";
+const description = "Farmácia Nogueira Tanguá em Almirante Tamandaré - PR. Medicamentos, atendimento farmacêutico e cuidado para sua família.";
 const shareImage = "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1200&q=85";
 
 export default function SEO() {
