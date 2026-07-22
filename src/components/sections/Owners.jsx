@@ -1,17 +1,20 @@
-import { HeartPulse, Users } from "lucide-react";
+import { HeartHandshake, ShieldCheck, Stethoscope } from "lucide-react";
 
-const owners = [
+const teamValues = [
   {
-    name: "Márcio Nogueira",
-    role: "Farmacêutico | Empresário | Cursando Medicina",
-    text: "Atua unindo conhecimento farmacêutico, gestão e dedicação para oferecer um atendimento seguro e de excelência aos clientes.",
-    icon: HeartPulse,
+    title: "Atendimento próximo",
+    text: "Uma equipe pronta para ouvir, orientar e tornar cada visita mais simples e acolhedora.",
+    icon: HeartHandshake,
   },
   {
-    name: "Rúbia Nogueira",
-    role: "Proprietária",
-    text: "Faz parte da história e da gestão da Farmácia Nogueira Tanguá.",
-    icon: Users,
+    title: "Orientação responsável",
+    text: "Cuidado e informação para que você tenha mais segurança nas suas escolhas de saúde.",
+    icon: Stethoscope,
+  },
+  {
+    title: "Confiança todos os dias",
+    text: "Compromisso com um atendimento respeitoso, produtos de qualidade e bem-estar para sua família.",
+    icon: ShieldCheck,
   },
 ];
 
@@ -22,15 +25,14 @@ export default function Owners() {
         <div className="section-heading section-heading--center">
           <span className="eyebrow">NOSSA EQUIPE</span>
           <h2 id="team-title">Profissionais que cuidam de você</h2>
+          <p>Em cada atendimento, você encontra atenção, orientação e cuidado de verdade.</p>
         </div>
         <div className="team-grid">
-          {owners.map(({ name, role, text, detail, icon: Icon }) => (
-            <article className="team-card" key={name}>
+          {teamValues.map(({ title, text, icon: Icon }) => (
+            <article className="team-card" key={title}>
               <span className="team-card__icon" aria-hidden="true"><Icon size={32} /></span>
-              <h3>{name}</h3>
-              <p className="team-card__role">{role}</p>
+              <h3>{title}</h3>
               <p>{text}</p>
-              {detail && <p className="team-card__detail">{detail}</p>}
             </article>
           ))}
         </div>
