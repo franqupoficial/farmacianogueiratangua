@@ -1,5 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Farmácia Nogueira">
-  <path fill="#C92B31" d="M32 56S10 42 10 26c0-8.3 6.3-14 14-14 4.4 0 7.3 1.7 8 4.2C32.7 13.7 35.6 12 40 12c7.7 0 14 5.7 14 14 0 16-22 30-22 30Z"/>
-  <path fill="#fff" d="M18.2 34.6 28.4 44l18.8-22.6-3.4-2.8-15.2 18.3-6.8-6.3z"/>
-  <path fill="#123B6D" d="M19.5 35.2 28.6 43.4 45.8 22.7l-2.1-1.7L28.4 39.2l-6.8-6.2z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="90 80 340 280">
+  <defs><clipPath id="heartClip"><path d="M260 340 C260 340 95 230 95 155 C95 110 125 85 160 85 C190 85 225 102 260 140 C295 102 330 85 360 85 C395 85 425 110 425 155 C425 230 260 340 260 340 Z"/></clipPath></defs>
+  <path fill="#C92B31" d="M260 340 C260 340 95 230 95 155 C95 110 125 85 160 85 C190 85 225 102 260 140 C295 102 330 85 360 85 C395 85 425 110 425 155 C425 230 260 340 260 340 Z"/>
+  <g clip-path="url(#heartClip)">
+    <path d="M168 268 L248 346 L378 188" fill="none" stroke="#FFFFFF" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M168 268 L248 346 L378 188" fill="none" stroke="#123B6D" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

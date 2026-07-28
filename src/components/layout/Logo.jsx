@@ -1,4 +1,4 @@
-import logo from "../../assets/images/logo-nogueira.png";
+import logo from "../../assets/images/logo-nogueira.svg";
 
 export default function Logo() {
   return (
@@ -7,8 +7,9 @@ export default function Logo() {
         className="brand-logo__image"
         src={logo}
         alt="Farmácia Nogueira"
-        width="200"
-        height="192"
+        width="175"
+        height="211"
+        decoding="async"
       />
     </span>
   );
