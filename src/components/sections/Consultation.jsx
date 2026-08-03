@@ -2,17 +2,16 @@ import { useState } from "react";
 
 const WHATSAPP_NUMBER = "5541996330476";
 
-const weekendOptions = [
-  { value: "Proximo sabado", label: "Próximo sábado" },
-  { value: "Proximo domingo", label: "Próximo domingo" },
-  { value: "Qualquer final de semana deste mes", label: "Qualquer final de semana deste mês" },
+const timeOptions = [
+  { value: "Manha", label: "Manhã" },
+  { value: "Tarde", label: "Tarde" },
   { value: "A combinar", label: "A combinar" },
 ];
 
 const initialForm = {
   name: "",
   phone: "",
-  weekend: "Proximo sabado",
+  period: "A combinar",
   reason: "",
 };
 
@@ -22,7 +21,7 @@ function buildWhatsAppUrl(form) {
     "",
     `*Nome:* ${form.name.trim()}`,
     `*Telefone:* ${form.phone.trim()}`,
-    `*Preferencia de final de semana:* ${form.weekend}`,
+    `*Preferencia de horario:* ${form.period}`,
   ];
 
   if (form.reason.trim()) {
@@ -55,13 +54,13 @@ export default function Consultation() {
           <span className="eyebrow">CONSULTA MÉDICA</span>
           <h2 id="consultation-title">Atendimento com o Dr. Márcio</h2>
           <p>
-            O Dr. Márcio realiza consultas médicas em alguns finais de semana na Farmácia Nogueira Tanguá.
+            O Dr. Márcio realiza consultas médicas na Farmácia Nogueira Tanguá.
             Preencha o formulário e consulte os horários disponíveis pelo WhatsApp.
           </p>
           <ul className="consultation-highlights">
-            <li>Consultas em finais de semana selecionados</li>
             <li>Atendimento na própria farmácia</li>
-            <li>Retorno rápido pelo WhatsApp</li>
+            <li>Consulta de horários pelo WhatsApp</li>
+            <li>Retorno rápido da nossa equipe</li>
           </ul>
         </div>
 
@@ -96,14 +95,14 @@ export default function Consultation() {
           </div>
 
           <div className="consultation-field">
-            <label htmlFor="consulta-fim-de-semana">Preferência de final de semana</label>
+            <label htmlFor="consulta-periodo">Preferência de horário</label>
             <select
-              id="consulta-fim-de-semana"
-              name="weekend"
-              value={form.weekend}
-              onChange={updateField("weekend")}
+              id="consulta-periodo"
+              name="period"
+              value={form.period}
+              onChange={updateField("period")}
             >
-              {weekendOptions.map((option) => (
+              {timeOptions.map((option) => (
                 <option key={option.value} value={option.value}>
                   {option.label}
                 </option>
