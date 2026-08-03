@@ -34,6 +34,7 @@ export default function Navbar() {
         <nav className={`navbar-links ${isOpen ? "navbar-links--open" : ""}`} id="menu-principal" aria-label="Navegação principal">
           <a href="#sobre" onClick={closeMenu}>Sobre nós</a>
           <a href="#servicos" onClick={closeMenu}>Serviços</a>
+          <a href="#consulta" onClick={closeMenu}>Consulta</a>
           <a href="#contato" className="navbar-button" onClick={closeMenu}>Contato</a>
         </nav>
       </div>

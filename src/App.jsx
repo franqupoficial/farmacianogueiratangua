@@ -5,6 +5,7 @@ import Stats from "./components/sections/Stats";
 import Inside from "./components/sections/Inside";
 import Owners from "./components/sections/Owners";
 import Services from "./components/sections/Services";
+import Consultation from "./components/sections/Consultation";
 import Reviews from "./components/sections/Reviews";
 import FutureMedFlash from "./components/sections/FutureMedFlash";
 import Map from "./components/sections/Map";
@@ -27,6 +28,7 @@ export default function App() {
         <Inside />
         <Owners />
         <Services />
+        <Consultation />
         <Reviews />
         <FutureMedFlash />
         <Map />

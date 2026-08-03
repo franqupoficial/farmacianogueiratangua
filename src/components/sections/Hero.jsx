@@ -9,7 +9,7 @@ export default function Hero() {
           <h1 id="hero-title">Sua saúde merece cuidado de verdade.</h1>
           <p>A Farmácia Nogueira oferece atendimento farmacêutico humanizado e soluções modernas para cuidar da sua família em Tanguá.</p>
           <div className="hero-buttons">
-            <a href="#contato" className="button button--primary">Fale conosco</a>
+            <a href="#consulta" className="button button--primary">Consulta Dr. Márcio</a>
             <a href="#servicos" className="button button--secondary">Conheça nossos serviços</a>
           </div>
         </div>
