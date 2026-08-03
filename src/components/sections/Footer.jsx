@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="site-container footer-grid">
         <div className="footer-brand">
           <Logo />
-          <p>Cuidado, saúde e confiança para sua família.</p>
+          <p>Farmácia Nogueira Tanguá — cuidado, saúde e confiança para sua família.</p>
         </div>
         <nav aria-label="Links do rodapé">
           <h2>Institucional</h2>
