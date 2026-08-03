@@ -1,4 +1,4 @@
-import logo from "../../assets/images/logo-nogueira.svg";
+import logo from "../../assets/images/logo-farmacia-nogueira.svg";
 
 export default function Logo() {
   return (
